@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<link href="~/Content/sanpham.css" rel="stylesheet" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body style="margin:0px">
+	<div id="header">
+		<div id="logo"> ThinkPro</div>
+		<input id="placeholder" type="text" placeholder="Tìm kiếm...">
+		<ul id="menu">
+			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-phone-48.png" /> số điện thoại</a> </li>
+			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-address-40.png" /> địa chỉ cửa hàng</a> </li>
+			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-call-64.png" /> khiếu nại</a> </li>
+			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-information-64.png" /> tin tức</a> </li>
+		</ul>
+	</div>
+	<!-- Banner chứa logo, tiêu đề và nội dung -->
+	<div id="banner">
+		<img src="pro.png" alt="Logo Pro">
+		<h1> ThinkPro đến Empro 😍😍</h1>
+		<p> Happy Women's Day, nữa nghĩa là tình yêu thật sự mới đến cùng nhau có thể tạo ra những điều tuyệt vời nhất!</p>
+	</div>
+	<div>
+		@RenderBody()
+	</div>
+</body>
+</html>

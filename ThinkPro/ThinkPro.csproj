@@ -149,9 +149,11 @@
     <Content Include="Content\photo\icons8-information-64.png" />
     <Content Include="Content\photo\icons8-phone-48.png" />
     <Content Include="Content\photo\icons8-shop-30.png" />
+    <Content Include="Content\photo\logo-thinkpro.png" />
     <Content Include="Content\photo\niz-66-keyboard-ec-switch.jpg" />
     <Content Include="Content\photo\OIP.jpg" />
-    <Content Include="Content\sanpham.css" />
+    <Content Include="Content\master-style.css" />
+    <Content Include="Content\Sanpham.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -188,6 +190,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Home\SanPham.cshtml" />
+    <Content Include="Views\Home\laptopgaming.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

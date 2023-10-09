@@ -30,5 +30,9 @@ namespace ThinkPro.Controllers
 		{
 			return View();
 		}
+		public ActionResult lpgaming()
+		{
+			return View();
+		}
 	}
 }

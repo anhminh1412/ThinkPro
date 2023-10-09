@@ -1,27 +1,148 @@
 ﻿<!DOCTYPE html>
 <link href="~/Content/sanpham.css" rel="stylesheet" />
+<link href="~/Content/master-style.css" rel="stylesheet" />
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body style="margin:0px">
 	<div id="header">
-		<div id="logo"> ThinkPro</div>
+		<div id="logo">
+			<a href="#"><img src="~/Content/photo/logo-thinkpro.png" /></a>
+			ThinkPro
+		</div>
 		<input id="placeholder" type="text" placeholder="Tìm kiếm...">
 		<ul id="menu">
-			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-phone-48.png" /> số điện thoại</a> </li>
-			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-address-40.png" /> địa chỉ cửa hàng</a> </li>
+			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-phone-48.png" /> 0708259***</a> </li>
+			<li> <div class="dropdown"> <img id="img-hd" src="~/Content/photo/icons8-address-40.png" />
+			<button style="background-color:white; border:0px; color:black;" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+				Địa Chỉ
+			</button>
+			<ul class="dropdown-menu">
+				<li>HELL</li>
+				
+			</ul>
+				</div> 
+			</li>
 			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-call-64.png" /> khiếu nại</a> </li>
 			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-information-64.png" /> tin tức</a> </li>
+			<li> <a href="#"> <img id="img-hd" src="~/Content/photo/icons8-shop-30.png" /> Giỏ hàng</a> </li>
 		</ul>
 	</div>
-	<!-- Banner chứa logo, tiêu đề và nội dung -->
-	<div id="banner">
-		<img src="pro.png" alt="Logo Pro">
-		<h1> ThinkPro đến Empro 😍😍</h1>
-		<p> Happy Women's Day, nữa nghĩa là tình yêu thật sự mới đến cùng nhau có thể tạo ra những điều tuyệt vời nhất!</p>
+	<div class="header_1">
+		<div class="btn-group" style="margin:5px; padding-left: 25%;">
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Laptop</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Văn Phòng</a></li>
+				<li><a class="dropdown-item"<link href="#" >Gaming</a></li>
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Bàn Phím</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Bàn Phím Cơ</a></li>
+				<li><a class="dropdown-item" href="#">Bàn Phím Cảm Ứng</a></li>
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Âm Thanh</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Tai nghe</a></li>
+				<li><a class="dropdown-item" href="#">Loa</a></li>
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ghế</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Văn Phòng</a></li>
+				<li><a class="dropdown-item" href="#">Ghế công thái học</a></li>
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Bàn</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Bàn nâng hạ</a></li>
+				<li><a class="dropdown-item" href="#">Bàn Trẻ em</a></li>
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Máy Chơi Game</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Sony</a></li>
+				<li><a class="dropdown-item" href="#">Xbox</a></li>
+
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Màn Hình</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Màn hình cong</a></li>
+				<li><a class="dropdown-item" href="#">Màn hình 3D</a></li>
+			</ul>
+			<button id="dm" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Phụ Kiện</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Thẻ Nhớ</a></li>
+				<li><a class="dropdown-item" href="#">Chuột</a></li>
+				<li><a class="dropdown-item" href="#">Lót Chuột</a></li>
+				<li><a class="dropdown-item" href="#">Cổng chuyển đổi</a></li>
+				<li><a class="dropdown-item" href="#">Balo, túi</a></li>
+				<li><a class="dropdown-item" href="#">Cáp sạc</a></li>
+
+			</ul>			
+		</div>
 	</div>
+	<!--------------------------------------------------------------------->
+
+	<!-- Banner chứa logo, tiêu đề và nội dung -->
+	<div class="main-container">
+		<div class="container">
+			<div class="banner">
+				<div id="banner-text">
+					<h1 style="padding:5px;">ThinkPro để Enpro</h1><br />
+					<p style="padding:2px">Happy Women's Day. Nhân ngày đặc biệt này ThinkPro mang đến rất nhiều CTKM hấp dẫn gửi tặng bạn. Hãy đến và trải nghiệm để mua những món đồ công nghệ dành cho người phụ bạn yêu thương!!</p>
+				</div>
+				<a href="#"> <img id="img-tg" alt="ThinkPro để Empro 😎😎" src="https://images.thinkgroup.vn/unsafe/1600x600/https://media-api-beta.thinkpro.vn/media/core/categories/2023/10/6/thinkpro-backgroud-thinkpro.jpg"> </a>
+			</div>
+			<h1 style="padding-top:30px">Sản phẩm nổi bật </h1>
+
+			
+			<div class="list-pro">
+				<div class="box-pro">
+					<div class="box-img">
+						<img src="~/Content/Tui-xach-vuong-nho-nu-tinh-1.jpg" alt="Túi xách vuông nữ tính" title="túi xách vuông nữ tính" class="fm-size-img" />
+					</div>
+					<div class="box-des">
+						<p>Tên sp: Túi xách vuông nhỏ nữ tính</p>
+						<p>Giá: 230.000</p>
+						<p><input type="submit" value="Mua" /></p>
+					</div>
+				</div>
+				<div class="box-pro">
+					<div class="box-img">
+						<img src="~/Content/Tui-xach-vuong-nho-nu-tinh-1.jpg" alt="Túi xách vuông nữ tính" title="túi xách vuông nữ tính" class="fm-size-img" />
+					</div>
+					<div class="box-des">
+						<p>Tên sp: Túi xách vuông nhỏ nữ tính</p>
+						<p>Giá: 230.000</p>
+						<p><input type="submit" value="Mua" /></p>
+					</div>
+				</div>
+				<div class="box-pro">
+					<div class="box-img">
+						<img src="~/Content/Tui-xach-vuong-nho-nu-tinh-1.jpg" alt="Túi xách vuông nữ tính" title="túi xách vuông nữ tính" class="fm-size-img" />
+					</div>
+					<div class="box-des">
+						<p>Tên sp: Túi xách vuông nhỏ nữ tính</p>
+						<p>Giá: 230.000</p>
+						<p><input type="submit" value="Mua" /></p>
+					</div>
+				</div>
+				<div class="box-pro">
+					<div class="box-img">
+						<img src="~/Content/Tui-xach-vuong-nho-nu-tinh-1.jpg" alt="Túi xách vuông nữ tính" title="túi xách vuông nữ tính" class="fm-size-img" />
+					</div>
+					<div class="box-des">
+						<p>Tên sp: Túi xách vuông nhỏ nữ tính</p>
+						<p>Giá: 230.000</p>
+						<p><input type="submit" value="Mua" /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 	<div>
 		@RenderBody()
 	</div>
